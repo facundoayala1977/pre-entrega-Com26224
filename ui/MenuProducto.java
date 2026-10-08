@@ -31,14 +31,18 @@ public class MenuProducto {
     //Menu Principal
 
     public void mostrarMenu(){
+        System.out.println("------------------------------");
         System.out.println("**** Gestión de Productos ****");
+        System.out.println("****      Mi   PetShop   *****");
+        System.out.println("------------------------------");
         System.out.println("1) Agregar producto");
         System.out.println("2) Listar productos");
         System.out.println("3) Buscar producto por ID");
         System.out.println("4) Actualizar producto");
         System.out.println("5) Eliminar producto");
         System.out.println("6) Salir");
-        System.out.println("***************************");
+        System.out.println("------------------------------")
+        System.out.println("******************************");
     }
 
     //Operaciones de CRUD
