@@ -77,6 +77,11 @@ public class Validador {
         }
     }
 
+    public static String leerTexto(Scanner sc, String mensaje){
+        System.out.println(mensaje);
+        return sc.nextLine();
+    }
+
     
 
 }
