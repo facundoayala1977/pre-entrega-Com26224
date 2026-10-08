@@ -44,21 +44,39 @@ public class Validador {
         }
     }
     
-    //lectura por consola
+    // lectura por consola
     //
 
     public static int leerEntero(Scanner sc , String mensaje){
-        //bucle infinito que solo se rompe cuando el usuario ingresa un entero valido.
+        // bucle infinito que solo se rompe cuando el usuario ingresa un entero valido.
         while (true) {
             System.out.println(mensaje);
             try {
                 int valor = sc.nextInt();
+                sc.nextLine();// limpia el salto de línea
                 return valor;
             } catch (InputMismatchException e) {
                 System.out.println("Debe ingresar un número entero. Intente nuevamente.");
+                sc.nextLine();// limpia el salto de línea
             }
         }
     }
 
+    public static double leerDouble (Scanner sc, String mensaje){
+        while (true) {
+            System.out.println(mensaje);
+            try {
+                double valor = sc.nextDouble();
+                sc.nextLine();
+                return valor;
+            } catch (Exception e) {
+                System.out.println("Debe ingresar un número decimal.(coma o punto");
+                sc.nextLine();
+            }
+            
+        }
+    }
+
+    
 
 }
