@@ -50,10 +50,11 @@ public class Main {
     }
 
     private static void cargarDatosDePrueba (ProductoService service){
-        service.guardar(new Producto("Cafe Negro 500g", 4500, 30, "Almacen"));
-        service.guardar(new Producto("Yerba Mate 500g", 2500, 23, "Almacen"));
-        service.guardar(new Producto("Chocolate Negro 250g", 3500, 35, "Golosinas"));
-        System.out.println("Se cargaron 3 productos de prueba. \n");
+        service.guardar(new Producto("Alimento Seco Perros 3kg", 12000, 30, "Perros"));
+        service.guardar(new Producto("Alimento Seco Gatos", 11500, 23, "Gatos"));
+        service.guardar(new Producto("Antiparasitario Perros", 15500, 35, "Perros"));
+        service.guardar(new Producto("Antiparasitario Gatos", 13500, 25, "Gatos"));
+        System.out.println("Se cargaron 4 productos de prueba. \n");
     }
 
 }

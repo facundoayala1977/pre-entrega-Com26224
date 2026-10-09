@@ -5,16 +5,9 @@ import java.util.Scanner;
 
 import exception.StockInsuficienteException;
 
-/*
-    Clase con métodos de validación reutilizables.
-    Todos estos métodos son estáticos: no necesitamos instanciarlos de Validador para usarlos. Se invocan directamente 
-*/
 
 public class Validador {
-    // Validaciones de datos del producto
-    //Lanzan una excepción si el dato es inválido
-    //No retornan nada: si terminan sin lanzar la excepción, el dato es válido
-
+    
     public static void validarNombre(String nombre){
         // un nombre nulo o vacío, no representa un producto válido
         if (nombre == null || nombre.trim().isEmpty()) {
@@ -45,7 +38,6 @@ public class Validador {
     }
     
     // lectura por consola
-    //
 
     public static int leerEntero(Scanner sc , String mensaje){
         // bucle infinito que solo se rompe cuando el usuario ingresa un entero valido.
